@@ -1,0 +1,258 @@
+
+/*Estilo al body */
+
+body{
+	font-family: 'Comfortaa', sans-serif;
+	line-height: 1;
+	font-size: 1em;
+
+}
+
+/*Estilo al header*/
+
+header{
+
+	background-color: #F8F9FA;
+
+}
+
+/* Tamaño del logo principal */
+
+#logo{
+
+	width: 130px;
+}
+
+
+/*Le saco el color al los links*/
+
+a.nav-link{
+
+	color: #000!important;	
+}
+
+/*Estilo al modal de registro*/
+
+div.modal-body{
+
+	font-family: Roboto, sans-serif;
+	font-size: 1em;
+}
+
+div.modal-header{
+
+	background:#117A8B;
+	color:#FFF;
+	font-family: Roboto, sans-serif;
+}
+
+/*Barra de Busqueda*/
+
+div.search{
+
+	background-color: #0097A7;
+	margin:0;
+}
+
+
+/* Estilo Jumbotron */
+
+div.jumbotron{
+	background-color: #008B8B;
+	color: #FFF;
+	font-family: Patrick Hand, sans-serif;
+	margin: auto;
+	border: 1px solid #000;
+}
+
+#jumbo-title{
+
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.jumbo-text p{
+	
+	font-size: 1.5em;
+}
+
+
+
+/*Estilo al Footer */
+
+footer{
+	position: relative;
+	font-family: Comfortaa, serif;
+	background-color: #000;
+	margin: 1px auto;
+	padding: 2%;
+}
+
+footer p{
+	font-size: 0.9em;
+	color: #FFF;
+}
+
+footer h3{
+	color: #FFF;
+	font-size: 1em;
+	font-family: Comfortaa, sans-serif;
+	padding-bottom: 5px;
+}
+
+ul.footer-font{
+	font-size: 2em;
+	float: right;
+}
+
+div.footer-content a{
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	font-size: 0.9em;
+	padding-left: 5px;
+
+}
+
+/*Estilo al Login*/
+
+.btn-group{
+	margin-right: 12rem;
+
+}
+
+div.dropdown-menu{
+	margin: 0px;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+}
+
+div.dropdown-menu p{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+div.dropdown-menu input{
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 1%;
+}
+
+.boton-inicio input.btn{
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+	margin:0px;
+}
+
+#register{
+	color: #000!important;
+	text-decoration: none;
+	margin-left: 3.2em;
+	font-family: Roboto, sans-serif;
+}
+
+/*Estilo a los libros*/
+
+.card-body{
+	padding: 0.5rem;
+	font-family: Red Hat Display, sans-serif;
+}
+
+.card{
+	background-color: #fff;
+	border:1px solid rgba(0,0,0,.125);
+}
+
+.card-libro{
+	background-color: #008B8B;
+	color: #fff;
+}
+.card img{
+	border-radius: 3px;
+}
+
+/*Estilo al contenido Autor*/
+
+div#body-autor{
+	font-family: Red Hand Display, sans-serif;
+	background-color: #F1F8E9;
+}
+
+img#autor{
+	width: 16rem;
+	border-width: 3px;
+	border-style: outset;
+	border-color: inherit;
+}
+
+p.autor{
+	line-height: 1.5;
+}
+
+div#header{
+	background-color: #F1F8E9;
+}
+
+div#otros{
+	background-color:#00838F;
+	color: #fff;
+}
+
+/*Estilo al contenido Libro*/
+
+div#body-libro{
+	font-family: Red Hand Display, sans-serif;
+	background-color: #F1F8E9;
+}
+
+img#libro{
+	width: 18rem;
+	border-width: 3px;
+	border-style: inset;
+	border-color: inherit;
+}
+
+p.libro{
+	line-height: 1.5;
+}
+
+div#detalles{
+	background-color: #00838F;
+	color: #FFF;
+}
+
+
+
+
+/*Estilo al Contenido Libros*/
+
+div#content-libros{
+	background-color: #F1F8E9;
+}
+
+
+/* Estilo al Contenido Autores*/
+
+div#content-autores{
+	background-color: #F1F8E9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
