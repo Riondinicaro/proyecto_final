@@ -6,11 +6,15 @@
 
 		$conexion = getConexion();
 
-		$consulta = "SELECT * " .
+		$consulta = "SELECT *" .
 					"FROM editoriales " .
 					"ORDER BY nombre_edit";
 
-		$resultado = $conexion->query( $consulta );
+		$resultado = $conexion ->query( $consulta );
 
-		return resultado;
+		return $resultado;
 	}
+
+
+	
+

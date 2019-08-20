@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-08-2019 a las 08:13:30
+-- Tiempo de generación: 20-08-2019 a las 03:58:20
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.7
 
@@ -169,51 +169,51 @@ CREATE TABLE `libros` (
   `numero_paginas` smallint(6) NOT NULL,
   `portada_libro` varchar(50) NOT NULL,
   `resumen` varchar(2000) NOT NULL,
-  `id_editorial` int(11) NOT NULL
+  `id_edit` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `libros`
 --
 
-INSERT INTO `libros` (`id_libro`, `isbn`, `titulo`, `id_genero`, `numero_paginas`, `portada_libro`, `resumen`, `id_editorial`) VALUES
+INSERT INTO `libros` (`id_libro`, `isbn`, `titulo`, `id_genero`, `numero_paginas`, `portada_libro`, `resumen`, `id_edit`) VALUES
 (2, 9789870429166, 'NACIDA BAJO EL SIGNO DEL TORO', 1, 424, 'nacida_bajo_el_signo_del_toro.jpg', 'La vida de Camila da un giro drástico el día en que la empresa de su padre se declara en bancarrota. Un departamento más pequeño en un barrio viejo y decrépito y un colegio público de jornada simple son algunos de los cambios que debe enfrentar. Detesta la nueva realidad, por lo que se encierra en la soledad que le brindan sus libros. Hasta que conoce a su nueva vecina, una astróloga que la iniciará en los misterios de las nacidas bajo el signo del Toro. Y, a medida que el cambio se profundiza en Camila, la realidad que tanto detestaba va tomando un nuevo color. En ella, el lindo de la clase, Sebastián, y Lautaro, el enigmático mejor alumno, se convertirán en los protagonistas.', 1),
-(3, 9789877381610, 'Nacida Bajo el Sol de Acuario', 1, 608, 'nacida_bajo_el_sol_de_acuario.jpg', '', 1),
-(4, 9789877383454, 'Nacida Bajo el Fuego de Aries', 1, 624, 'nacida_bajo_el_fuego_de_aries.jpg', '', 1),
-(5, 9789504954699, 'Canciones para Paula', 1, 800, 'canciones_para_paula.jpg', '', 2),
-(6, 9789504955931, '¿Sabes que te quiero?', 1, 696, 'sabes_que_te_quiero.jpg', '', 2),
-(7, 9789504955948, 'Cállame con un beso', 1, 736, 'callame_con_un_beso.jpg', '', 2),
-(8, 9788494112324, 'Susurros', 1, 376, 'susurros.jpg', '', 3),
-(9, 9788494172960, 'Delirios', 1, 381, 'delirios.jpg', '', 3),
-(10, 9788416224159, 'Engaños', 1, 361, 'engaños.jpg', '', 3),
-(11, 9789500435727, 'La Dama de Noche', 3, 480, 'la_dama_de_noche.jpg', '', 4),
-(12, 9789500436502, 'La Magia de la Vida', 3, 464, 'la_magia_de_la_vida.jpg', '', 4),
-(13, 9789877250077, 'La maestra de la laguna', 3, 832, 'la_maestra_de_la_laguna.jpg', '', 5),
-(14, 9789506443788, 'La salvaje de Bostón', 3, 512, 'la_salvaje_de_boston.jpg', '', 5),
-(16, 9789500752442, 'El amante Japonés', 3, 352, 'el_amante_japones.jpg', '', 6),
-(17, 9789500762823, 'Largo pétalo de mar', 3, 440, 'petalo.jpg', '', 6),
-(24, 9788466644174, 'Hush, hush', 2, 366, 'hush.jpg', '', 9),
-(25, 9788466646390, 'Crescendo', 2, 405, 'crescendo.jpg', '', 9),
-(26, 9789876272728, 'Silencio', 2, 412, 'silencio.jpg', '', 9),
-(27, 9788493961305, 'Finale', 2, 390, 'finale1.jpg', '', 9),
-(28, 9788498382365, 'El ladrón del rayo', 2, 285, 'percy.jpg', '', 11),
-(29, 9788498382808, 'El mar de los Monstruos', 2, 253, 'monstruos.jpg', '', 11),
-(30, 9788498382921, 'La maldición del Titán', 2, 280, 'titan.jpg', '', 11),
-(31, 9788498382525, 'La batalla del Laberinto', 2, 313, 'laberinto.jpg', '', 11),
-(32, 9788498383133, 'El último héroe del Olimpo', 2, 346, 'olimpo.jpg', '', 11),
-(33, 9788417092566, 'La brújula Dorada', 1, 400, 'brujula.jpg', '', 13),
-(34, 9788417092573, 'La Daga', 1, 320, 'daga.jpg', '', 13),
-(35, 9788417167196, 'El catalejo Lacado', 1, 496, 'catalejo.jpg', '', 13),
-(37, 9789877391053, 'Indias Blancas', 3, 480, 'indias.jpg', '', 14),
-(38, 9788416224319, 'Salvajes', 1, 256, 'sal.jpg', '', 3),
-(39, 9789504946472, 'Algo tan sencillo como tuitear te quiero', 1, 400, 'sencillo.jpg', '', 2),
-(40, 9789500439664, 'Zafiros en la piel', 3, 352, 'zafiros.jpg', '', 4),
-(41, 9789500434751, 'Lo que no se dice', 3, 436, 'dice.jpg', '', 4),
-(42, 9789506444617, 'La mirada del Puma', 3, 480, 'puma.jpg', '', 5),
-(43, 9789506442613, 'El ángel roto', 3, 616, 'el_angel_roto.jpg', '', 5),
-(44, 9788401019760, 'Más allá del Invierno', 3, 352, 'invierno.jpg', '', 5),
-(45, 9788401352072, 'El cuaderno de Maya', 3, 444, 'maya.jpg', '', 6),
-(46, 9788417167790, 'El libro de la Oscuridad', 1, 448, 'oscuridad.jpg', '', 13);
+(3, 9789877381610, 'NACIDA BAJO EL SOL DE ACUARIO', 1, 608, 'nacida_bajo_el_sol_de_acuario.jpg', '¿Cómo no dudar de sus sonrisas? ¿Cómo no sucumbir a su belleza? ¿Cómo confiar en alguien perfecto que parecía inalcanzable?\r\nBianca está en su último año de colegio. Tiene un padre muy estricto, una madre embarazada y varios hermanos menores que dependen de ella. Y además, tiene un secreto: a escondidas de sus padres, va a clases de canto. Su sueño es entrar en el mejor conservatorio de Argentina, y quizás algún día ser una gran estrella...\r\nUna noche, al salir de la clase de canto, se encuentra con Sebastián Gálvez, un leonino del que lleva años enamorada a la distancia. Él se ofrece a llevarla a su casa... y entra de lleno en su vida. Para Bianca es como si estuviese viviendo un sueño del que no quiere despertar, pero ¿podrá entregarse al amor que durante tanto tiempo pareció inalcanzable? ', 1),
+(4, 9789877383454, 'NACIDA BAJO EL FUEGO DE ARIES', 1, 624, 'nacida_bajo_el_fuego_de_aries.jpg', 'Bárbara Deg ¨ner es una hermosa joven de 17 años que está terminando el secundario. Es del signo de Aries, independiente y batalladora. Sus padres están separados desde hace unos años y no parecen preocuparse demasiado por ella. Después de una temporada que la llevó a situaciones límite, se siente muy sola pero está decidida a cambiar. Se pregunta si alguna vez podrá encontrar la paz, la amistad y el amor verdadero. Por su parte, Sergio, un atlético y simpático estudiante cordobés que juega muy bien al fútbol y que está dispuesto a triunfar como profesional, se muda a la capital y empieza a concurrir al colegio de Bárbara. El recién llegado debe hacerse un lugar entre sus nuevos compañeros, entre los que están Camila, Lautaro, Bianca y Sebastián. Y Bárbara, por supuesto, quien le roba el corazón desde la primera vez que cruzan sus miradas. ¿Podrá el amor cambiar las vidas de Bárbara y Sergio y convertirlos en personas a cargo de su destino?', 1),
+(5, 9789504954699, 'CANCIONES PARA PAULA', 1, 800, 'canciones_para_paula.jpg', 'Paula es una adolescente de casi 17 años que encuentra el amor por primera vez en Internet. Después de estar dos meses hablando con Ángel, un joven periodista que trabaja en una revista de música, decide quedar con él y comprobar si lo que siente a través de la pantalla también lo experimenta en el cara a cara. Pero el chico llega tarde y, mientras espera, Paula conoce a Álex, un aspirante a escritor con una sonrisa maravillosa. A partir de ese momento comienza una historia de amores y desamores, de la que serán testigo \"la Sugus\", el grupo de amigas de Paula. Una chicas desenfadadas, alegres y, a veces, difíciles de tragar (como los caramelos Sugus), que ayudarán a la protagonista a tomar decisiones importantes en aquellos días de marzo en un lugar de la ciudad.', 2),
+(6, 9789504955931, '¿SABES QUE TE QUIERO?', 1, 696, 'sabes_que_te_quiero.jpg', 'La adolescencia es una época en la que todo se vive con mucha intensidad. Tanto para lo bueno, como para lo malo. Paula se fue de vacaciones con su familia a París e intentó olvidar, sin éxito, lo acontecido en las últimas semanas. Pero allí conoce a alguien que parece que quiere hacerle la vida imposible. Llega el verano y las Sugus celebran el deseado final de los exámenes. Pero no todos serán alegrías. Cuando la persona que te traiciona es tu mejor amiga, duele más. Una de las chicas, además, se enfrenta a un problema que es incapaz de controlar. Nuevos amores, desengaños, verdades y mentiras que convertirán esta segunda parte en una montaña rusa de sentimientos y sensaciones.', 2),
+(7, 9789504955948, 'CÁLLAME CON UN BESO', 1, 736, 'callame_con_un_beso.jpg', 'El final de la trilogía no deja indiferente a nadie. Paula se marcha a Londres a estudiar y afronta con muchas dudas una relación a distancia. No será fácil elegir que camino tomar con el que cree que es el chico de su vida: Álex. El escritor ha abierto un biblio-café y tiene en una de sus clientas a una de sus mayores admiradoras. Las Sugus, por su parte, se han separado y entre ellas las cosas ya no son lo que eran. Miriam se ve inmersa en una relación tóxica, Cristina ha encontrado el amor y Diana, sigue siendo Diana, aunque ha madurado con Mario a su lado. Fue el desenlace más esperado de la primera historia que pasó de las Redes Sociales al papel.', 2),
+(8, 9788494112324, 'SUSURROS', 1, 376, 'susurros.jpg', 'Desde hace dieciséis años, Alyssa Gardner ha vivido marcada por ser la descendiente de Alicia Liddell, la niña que inspiró a Lewis Carroll para escribir Alicia en el País de las Maravillas. Pero las bromas crueles sobre lirones y fiestas del té no pueden compararse con el hecho de que Alyssa puede oír los susurros de los insectos y las flores, motivo por el cual su madre está ingresada en un psiquiátrico. Puede que Alyssa esté loca, pero se las arregla para no perder la cabeza. Por ahora… Cuando la salud mental de su madre empeora y los susurros se hacen insoportables para Alyssa, esta decide investigar sobre los orígenes de esta maldición familiar. Un conjunto de reliquias y una extraña página web llevarán a Alyssa y a su mejor amigo  al interior de la madriguera del conejo hacia el verdadero País de las Maravillas. Allí, la versión más espeluznante de los personajes originales explicarán a Alyssa cuál es su propósito y tendrá que decidir en quién confiar: en Jeb, su mejor amigo, o en Morfeo, un chico misterioso y seductor que la guía a través del País de las Maravillas, y con el que sueña desde que era niña. ', 3),
+(9, 9788494172960, 'DELIRIOS', 1, 381, 'delirios.jpg', '', 3),
+(10, 9788416224159, 'ENGAÑOS', 1, 361, 'engaños.jpg', '', 3),
+(11, 9789500435727, 'LA DAMA DE LA NOCHE', 3, 480, 'la_dama_de_noche.jpg', '', 4),
+(12, 9789500436502, 'LA MAGIA DE LA VIDA', 3, 464, 'la_magia_de_la_vida.jpg', '', 4),
+(13, 9789877250077, 'LA MAESTRA DE LA LAGUNA', 3, 832, 'la_maestra_de_la_laguna.jpg', '', 5),
+(14, 9789506443788, 'LA SALVAJE DE BOSTÓN', 3, 512, 'la_salvaje_de_boston.jpg', '', 5),
+(16, 9789500752442, 'EL AMANTE JAPONÉS', 3, 352, 'el_amante_japones.jpg', '', 6),
+(17, 9789500762823, 'LARGO PÉTALO DE MAR', 3, 440, 'petalo.jpg', '', 6),
+(24, 9788466644174, 'HUSH, HUSH', 2, 366, 'hush.jpg', '', 9),
+(25, 9788466646390, 'CRESCENDO', 2, 405, 'crescendo.jpg', '', 9),
+(26, 9789876272728, 'SILENCIO', 2, 412, 'silencio.jpg', '', 9),
+(27, 9788493961305, 'FINALE', 2, 390, 'finale1.jpg', '', 9),
+(28, 9788498382365, 'EL LADRÓN DEL RAYO', 2, 285, 'percy.jpg', '', 11),
+(29, 9788498382808, 'EL MAR DE LOS MONSTRUOS', 2, 253, 'monstruos.jpg', '', 11),
+(30, 9788498382921, 'LA MALDICIÓN DEL TITÁN', 2, 280, 'titan.jpg', '', 11),
+(31, 9788498382525, 'LA BATALLA DEL LABERINTO', 2, 313, 'laberinto.jpg', '', 11),
+(32, 9788498383133, 'EL ÚLTIMO HÉROE DEL OLIMPO', 2, 346, 'olimpo.jpg', '', 11),
+(33, 9788417092566, 'LA BRÚJULA DORADA', 1, 400, 'brujula.jpg', '', 13),
+(34, 9788417092573, 'LA DAGA', 1, 320, 'daga.jpg', '', 13),
+(35, 9788417167196, 'EL CATALEJO LACADO', 1, 496, 'catalejo.jpg', '', 13),
+(37, 9789877391053, 'INDIAS BLANCAS', 3, 480, 'indias.jpg', '', 14),
+(38, 9788416224319, 'SALVAJES', 1, 256, 'sal.jpg', '', 3),
+(39, 9789504946472, 'ALGO TAN SENCILLO COMO TUITEAR TE QUIERO', 1, 400, 'sencillo.jpg', '', 2),
+(40, 9789500439664, 'ZAFIROS EN LA PIEL', 3, 352, 'zafiros.jpg', '', 4),
+(41, 9789500434751, 'LO QUE NO SE DICE', 3, 436, 'dice.jpg', '', 4),
+(42, 9789506444617, 'LA MIRADA DEL PUMA', 3, 480, 'puma.jpg', '', 5),
+(43, 9789506442613, 'EL ÁNGEL ROTO', 3, 616, 'el_angel_roto.jpg', '', 5),
+(44, 9788401019760, 'MÁS ALLÁ DEL INVIERNO', 3, 352, 'invierno.jpg', '', 5),
+(45, 9788401352072, 'EL CUADERNO DE MAYA', 3, 444, 'maya.jpg', '', 6),
+(46, 9788417167790, 'EL LIBRO DE LA OSCURIDAD', 1, 448, 'oscuridad.jpg', '', 13);
 
 -- --------------------------------------------------------
 
@@ -275,7 +275,11 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`usr_id`, `usr_name`, `usr_apellido`, `usr_user_name`, `usr_password`, `usr_email`) VALUES
 (1, 'Carolina', 'Riondini', 'Caro', '123456', 'caroriondini27@gmail.com'),
-(2, 'Administrador', '', 'root', 'root', 'root@root.com');
+(2, 'Administrador', '', 'root', 'root', 'root@root.com'),
+(7, 'Pablo', 'Tilli', 'Pablo.T', '123456', 'pablotilli@gmail.com'),
+(8, 'Celeste', 'Riondini', 'Cele', '123456', 'celeriondini@gmail.com'),
+(9, 'Juan', 'Perez', 'Juancho', '123456', 'juan@gmail.com'),
+(10, 'Hugh', 'Jackman', 'Logan', '123456', 'loganxm@gmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -313,8 +317,8 @@ ALTER TABLE `generos`
 --
 ALTER TABLE `libros`
   ADD PRIMARY KEY (`id_libro`),
-  ADD KEY `id_genero` (`id_genero`,`id_editorial`),
-  ADD KEY `id_editorial` (`id_editorial`);
+  ADD KEY `id_genero` (`id_genero`,`id_edit`),
+  ADD KEY `id_editorial` (`id_edit`);
 
 --
 -- Indices de la tabla `paises`
@@ -380,7 +384,7 @@ ALTER TABLE `usr_comentarios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `usr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `usr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restricciones para tablas volcadas
@@ -404,7 +408,7 @@ ALTER TABLE `autores_libros`
 -- Filtros para la tabla `libros`
 --
 ALTER TABLE `libros`
-  ADD CONSTRAINT `libros_ibfk_1` FOREIGN KEY (`id_editorial`) REFERENCES `editoriales` (`id_edit`),
+  ADD CONSTRAINT `libros_ibfk_1` FOREIGN KEY (`id_edit`) REFERENCES `editoriales` (`id_edit`),
   ADD CONSTRAINT `libros_ibfk_2` FOREIGN KEY (`id_genero`) REFERENCES `generos` (`id_genero`);
 
 --

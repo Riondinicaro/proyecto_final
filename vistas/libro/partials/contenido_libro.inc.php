@@ -2,6 +2,7 @@
 
 include_once( PATH_DAOS . "/librosDAO.php");
 include_once( PATH_DAOS . "/autorDAO.php");
+include_once( PATH_DAOS . "/editorialesDAO.php");
 
 $registros = buscarLibro( $_REQUEST["id_libro"] );
 

@@ -61,13 +61,26 @@ function crearCardAutor($nombre, $apellido, $imagen, $id_autor){
             </div>
         </div>
 
-
-
-
-
 <?php
 }
 
+function crearCardEditorial($id_edit, $nombre_edit){
+?>
+
+    <div class="col-md-3 mb-2 text-center d-flex align-items-stretch">
+        <div class="card-group" style="width: 16rem">
+            <div class="card-body">
+                <h5 class="card-title mt-2"><?=$nombre_edit?></h5>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-dark btn-sm"></a>
+                    </div>
+                </div>
+             </div>
+       </div>
+
+<?php
+
+}
 
 
 function getOptionsComboGeneros($incluir_opcion_todos = false, $id_item_seleccionado = null){
@@ -99,9 +112,37 @@ function getOptionsComboGeneros($incluir_opcion_todos = false, $id_item_seleccio
 
 }
 
+function getOptionsComboEditoriales ($incluir_opcion_todos = false, $id_item_seleccionado = null){
+
+    include_once(PATH_HELPERS . '/database_helper.php');
+    include_once(PATH_DAOS . '/editorialesDAO.php');
+
+    $conexion = getConexion();
+
+    $editoriales = obtenerEditoriales();
+
+    $opcionesCombo = "";
+
+    if ($incluir_opcion_todos){
+        $opcionesCombo .= '<option value="-1">Todas</option>';
+    }
+
+    foreach ( $editoriales as $editorial ){
+        $opcionesCombo .= '<option value="'. $editorial["id_edit"] . '"';
+
+        if ( $id_item_seleccionado == $editorial["id_edit"]){
+            $opcionesCombo .= 'selected="selected"';
+        }
+
+        $opcionesCombo .= '>' . $editorial["nombre_edit"] . '</option>';
+    }
+
+    return $opcionesCombo;
+}
+
  function getOptionsComboAutor($incluir_opcion_todos = false, $id_item_seleccionado = null){
 
-    include_once(PATH_HELPERS . "database_helper.php");
+    include_once(PATH_HELPERS . "/database_helper.php");
     include_once(PATH_DAOS . "/autorDAO.php");
 
    $conexion = getConexion();
@@ -126,6 +167,11 @@ function getOptionsComboGeneros($incluir_opcion_todos = false, $id_item_seleccio
 
   return $opcionesCombo;
 }
+
+
+
+
+
 
 function getTablaHTML( $registros, $campos, $primary_key, $nombre_modulo ){
 

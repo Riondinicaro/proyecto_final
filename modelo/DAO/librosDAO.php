@@ -52,8 +52,6 @@
     
     $resultado = $conexion->query( $consulta );
 
-
-
     return $resultado;
 
   }
@@ -69,9 +67,6 @@
       return $resultado;
   }
 
-  
-
-
 
         function agregarLibro ( $libros ){
 
@@ -79,7 +74,7 @@
 
                 $sql = "INSERT INTO libros " .
                         "(isbn, titulo, id_genero, numero_paginas, portada_libro, 
-                          resumen, id_editorial)"
+                          resumen, id_edit)"
                           . " VALUES ('"
                           . $libros["isbn"] . "','"
                           . $libros["titulo"] . "','"
@@ -87,7 +82,7 @@
                           . $libros["numero_paginas"] . "','"
                           . $libros["portada_libro"] . "','"
                           . $libros["resumen"] . "','"
-                          . $libros["id_editorial"] . "','"
+                          . $libros["id_edit"] . "','"
                 . ")";
 
                 $conexion->query( $sql );
@@ -103,7 +98,7 @@
                          ", id_genero=" . $libros["id_genero"] .
                          ", numero_paginas\"" . $libros["numero_paginas"] . "\"".
                          ", resumen\"" . $libros["resumen"] . "\"" .
-                         ", id_editorial" . $libros["id_editorial"];
+                         ", id_edit" . $libros["id_edit"];
 
                 if ( $libros["imagen"] ){
                    $sql .= ", portada_libro=\"" . $libros["imagen"] . "\"";

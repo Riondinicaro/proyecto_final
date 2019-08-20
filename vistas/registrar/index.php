@@ -28,6 +28,12 @@
 
 				$sql = "INSERT INTO usuarios (`usr_id`, `usr_name`, `usr_apellido`, `usr_user_name`, `usr_password`, `usr_email`) VALUES (NULL, '$nombre', '$apellido', '$nombre_user', '$contrasena', '$mail')";
 
+				if ($sql){
+					echo '<div class="alert alert-success alert-dismissable fade show text-center m-0" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>TE HAS REGISTRADO CORRECTAMENTE</div>';
+				}else{
+					echo '<div class="alert alert-danger alert-dismissable fade show text-center m-0" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>HUBO UN FALLO A LA HORA DE REGISTRARTE. INTENTALO NUEVAMENTE</div>';
+				}
+
 				$conexion->query( $sql );
 			}
 	}

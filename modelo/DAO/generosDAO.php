@@ -8,7 +8,7 @@
 
         $consulta = "SELECT * " . 
                     "FROM generos " .
-                    "ORDER BY nombre_genero";
+                    "ORDER BY nombre";
                     
 
         $resultado = $conexion->query( $consulta );

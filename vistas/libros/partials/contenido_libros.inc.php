@@ -9,8 +9,6 @@
      include_once PATH_DAOS . '/librosDAO.php';
 
 
-
-
  	 $busqueda = "";
 
     if ( isset( $_GET["buscar"] ) ){
@@ -27,7 +25,6 @@
 
     }
 
-    $libros = reordenarLibros();
 
     $libros = obtenerLibros($busqueda, $genero);
 
@@ -38,7 +35,7 @@
 
 		foreach ($libros as $libro) {
 
-			crearCardLibro($libro['titulo'], $libro['isbn'], $libro['portada_libro'], $libro['id_libro'], $libro['id_genero'], $libro['numero_paginas'], $libro['resumen'],                         $libro['id_editorial'],);	
+			crearCardLibro($libro['titulo'], $libro['isbn'], $libro['portada_libro'], $libro['id_libro'], $libro['id_genero'], $libro['numero_paginas'], $libro['resumen'],                         $libro['id_edit'],);	
 
 
 		}

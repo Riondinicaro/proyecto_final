@@ -47,7 +47,7 @@ $autor = mysqli_fetch_assoc($registros);
 
                 foreach ($libros as $libro) {
 
-                    crearCardLibro($libro['titulo'], $libro['isbn'], $libro['portada_libro'], $libro['id_libro'], $libro['id_genero'], $libro['numero_paginas'], $libro['resumen'],     $libro['id_editorial'],);    
+                    crearCardLibro($libro['titulo'], $libro['isbn'], $libro['portada_libro'], $libro['id_libro'], $libro['id_genero'], $libro['numero_paginas'], $libro['resumen'], $libro['id_edit'],);    
                 }
                }
             ?> 
